@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import HeaderComponents from "./shared/components/header";
+import BannerComponents from "./shared/components/banner";
+import EcommerceComponents from "./components/section/ecommerce";
+import DevelopComponent from "./components/section/develop";
+import FooterComponents from "./shared/components/footer";
+import WooCommerceComponents from "./components/section/wooCommerce";
+import SupportComponents from "./components/section/support";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <HeaderComponents />
+      <BannerComponents />
+      <EcommerceComponents />
+      <DevelopComponent />
+      <SupportComponents/>
+      <WooCommerceComponents />
+      <FooterComponents />
+    </>
   );
 }
 
